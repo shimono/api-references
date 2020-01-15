@@ -1,12 +1,9 @@
 # Entityと他オブジェクトとのリンク解除
 ## 概要
 ユーザデータのEntityとの$links情報を削除する
-### 制限事項
-* リクエストヘッダのContent-Typeは全てapplication/jsonとして扱う
-* リクエストボディはJSON形式のみ受け付ける
-* レスポンスヘッダのContent-Typeはapplication/jsonのみをサポートし、レスポンスボディはJSON形式とする
-* $formatクエリオプションにatom または xmlを指定した場合、エラーとはならないが、レスポンスボディのデータの保証はない
 
+### 必要な権限
+write
 
 ## リクエスト
 ### リクエストURL
@@ -73,4 +70,3 @@ curl "https://cell1.unit1.example/box1/odata-collection1/entity-type1('{100-1_20
 /\$links/_entity-type1('{100-1_20101108-111352093}')" -X DELETE -i -H 'Authorization: Bearer AA~PBDc...(省略)...FrTjA' -H \
 'Accept: application/json'
 ```
-

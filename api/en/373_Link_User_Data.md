@@ -9,7 +9,7 @@ It can be linked with the following OData resources.
 
 ### Required Privileges
 
-No
+write
 
 ### Restrictions
 

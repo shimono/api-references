@@ -5,7 +5,8 @@
 * ユーザデータ
 
 ### 必要な権限
-No
+write
+
 ### 制限事項
 * リクエストヘッダのContent-Typeは全てapplication/jsonとして扱う
 * リクエストボディはJSON形式のみ受け付ける
@@ -93,4 +94,3 @@ curl "https://cell1.unit1.example/box1/odata-collection1/entity-type1('{100-1_20
 'Accept: application/json' -d "{\"uri\":\"https://cell1.unit1.example/box1/odata-collection1\
 /entity-type1('{100-1_20101108-111352093}')\"}"
 ```
-

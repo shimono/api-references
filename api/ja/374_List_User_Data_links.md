@@ -4,16 +4,8 @@
 以下のODataリソースを指定することができる  
 * ユーザデータ
 
-### 制限事項
-* リクエストヘッダのContent-Typeは全てapplication/jsonとして扱う
-* リクエストボディはJSON形式のみ受け付ける
-* レスポンスヘッダのContent-Typeはapplication/jsonのみをサポートし、レスポンスボディはJSON形式とする
-* ユーザデータ制限事項
-	- Edm.DateTime型のプロパティの有効範囲のチェックが適切に行われない
-	- Edm.DateTime型の配列は未サポート
-	- Edm.DateTime型のプロパティにSYSUTCDATETIME()を指定した場合、設定されるシステム時間が異なる場合がある
-       - リクエストボディでの設定時とDefaultValueでの設定時（\__published、\__updatedは後者のタイミング）
-	- 1つのEntityTypeに対して作成出来るのは、DynamicProperty・DeclaredProperty・ComplexTypeProperty合わせて400個まで
+### 必要な権限
+read
 
 ## リクエスト
 ### リクエストURL

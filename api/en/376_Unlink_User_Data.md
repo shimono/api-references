@@ -4,6 +4,9 @@
 
 Delete $links information with Entity of user data
 
+### Required Privileges
+
+write
 
 ### Restrictions
 
